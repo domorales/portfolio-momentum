@@ -228,6 +228,9 @@ p {
 .playtesting .retroalimentacion ul{
 	font-size: 12pt;
 }
+.playtesting .retroalimentacion ul b{
+	font-size: 12pt;
+}
 
 #ideas {
 	margin: 15rem 15rem 0 0 !important;
