@@ -15,7 +15,6 @@ const createAllIdeas = async () => {
 
 	for (let i = 1; i <= numberIdeas; i++) {
 		let path = getImagePath(i);
-		if (!(await existsImage(path))) continue;
 
 		$template.querySelector('img').setAttribute('src', path);
 		$template.querySelector('img').setAttribute('alt', `Idea ${i}`);
@@ -28,12 +27,4 @@ const createAllIdeas = async () => {
 	$ideas.appendChild($fragment);
 };
 
-const existsImage = (path) => {
-	const img = new Image();
-	img.src = path;
-	return new Promise((resolve) => {
-		img.onload = () => resolve(true);
-		img.onerror = () => resolve(false);
-	});
-};
 const getImagePath = (name) => `./images/ideas/${name}.jpg`;
