@@ -1,18 +1,17 @@
 // DOM FUCTIONS
-document.addEventListener('DOMContentLoaded', async () => {
-	const $loader = document.querySelector('.loader-container');
-	$loader.classList.remove('none');
-	await createAllIdeas();
-	$loader.classList.add('none');
+const $loader = document.querySelector('.loader-container');
+
+document.addEventListener('DOMContentLoaded', () => {
+	createAllIdeas();
 });
 
 // UTILS FUNCTIONS
-const createAllIdeas = async () => {
+const createAllIdeas = () => {
 	const $fragment = document.createDocumentFragment(),
 		$ideas = document.getElementById('ideas-carousel'),
 		$template = document.getElementById('idea-template').content,
 		numberIdeas = 61;
-
+	$loader.classList.remove('none');
 	for (let i = 1; i <= numberIdeas; i++) {
 		let path = getImagePath(i);
 
@@ -25,6 +24,7 @@ const createAllIdeas = async () => {
 	}
 
 	$ideas.appendChild($fragment);
+	$loader.classList.add('none');
 };
 
 const getImagePath = (name) => `./images/ideas/${name}.jpg`;
