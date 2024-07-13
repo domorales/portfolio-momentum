@@ -25,7 +25,7 @@ const createAllIdeas = async () => {
 		$fragment.appendChild($clone);
 	}
 
-	$ideas.appendChild($fragment);	
+	$ideas.appendChild($fragment);
 };
 
 const existsImage = (path) => {
@@ -36,4 +36,4 @@ const existsImage = (path) => {
 		img.onerror = () => resolve(false);
 	});
 };
-const getImagePath = (name) => `./images/ideas/${name}.png`;
+const getImagePath = (name) => `./images/ideas/${name}.jpg`;
