@@ -184,10 +184,6 @@ p {
 	border-radius: 15px;
 }
 
-.container-prototype-version {
-	
-}
-
 .container-playtesting{
 	display: flex;
 	flex-wrap: wrap;
@@ -230,6 +226,37 @@ p {
 }
 .playtesting .retroalimentacion ul b{
 	font-size: 12pt;
+}
+
+#desarrollo ul.tecnologias{
+	font-size: 20px
+}
+.container-tecnologia{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.container-tecnologia .item-tecnologia{
+	flex: 1 1 150px;
+	max-width: 150px;
+	max-height: 150px;
+}
+
+.item-tecnologia {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	box-sizing: border-box;
+}
+
+.item-tecnologia img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	border-radius: 15px;
+}
+.item-tecnologia:hover img{
+	transform: scale(1.1);
 }
 
 #ideas {
