@@ -1790,7 +1790,7 @@
 							disponible para la mayoría de dispositivos como computadoras y celulares, que el acceso al juego sea rápido y que siempre
 							cuente con buen rendimiento.
 						</p>
-						<h4 class = "mt-4">Componentes Principales</h4>
+						<h4 class = "mt-4">Componentes</h4>
 						<ul class = "tecnologias">
 							<li><b>Game Client (Frontend)</b>: Encargado de la renderización de las texturas, reproducción de audios y la captura de
 							los movimientos del jugador de forma local. Para este componente usaremos <b>Unity</b>.</li>
@@ -1798,6 +1798,26 @@
 							sincrónica lo que ocurre a todos los jugadores. Para el caso del proyecto, será el encargado de realizar la generación de los
 							niveles, conteo de kills y/o escapes de los equipos por la puerta correspondiente. Para este componente usaremos
 							<b>Socket IO</b></li>
+						</ul>
+						<h4 class = "mt-4">Otras consideraciones</h4>
+						<ul class = "tecnologias">
+							<li><b>Rendimiento</b>: El juego debe presentar un buen rendimiento en todo momento y que sea rápida la carga del tiempo entre que
+							el jugador accede al juego y el desarrollo de la partida.</li>
+							<li><b>Portabilidad</b>: El juego debe ser ejecutable en la mayoría de dispositivos, entre los cuales se incluye a los móviles y
+							las computadoras.</li>
+						</ul>
+						<h3 class="mt-4">Decisiones de diseño</h3>
+						<p class = "text-idea">
+							Conforme ibamos revisando las tecnologías que vamos a usar y también conforme se iba detallando la arquitectura que el sistema
+							puede tener, del prototipo seleccionado se tomaron algunas decisiones de diseño.
+						</p>
+						<ul class = "tecnologias">
+							<li>La generación del laberinto pasa de ser un nivel predeterminado a una generación procedural, de esta forma los jugadores van a
+								jugar siempre en distintos mapas.
+							</li>
+							<li>Los controles serán distintos dependiendo de la plataforma en que un jugador esté jugando. Para aquellos que usen un móvil, se
+								le mostrará un joystick junto al ataque, mientras que para los usuarios en computadora solo se le mostrará el arma que porta.
+							</li>
 						</ul>
 					</section>
 				</div>
