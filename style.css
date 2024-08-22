@@ -287,6 +287,36 @@ p {
 	color: #333;
 }
 
+#planificacion .roles{
+	text-align: center;
+}
+#planificacion .roles p{
+	font-size: 14pt !important;
+}
+#planificacion .plan-playtesting h3{
+	text-align: center;
+}
+#planificacion .plan-playtesting li{
+	font-size: 14pt !important;
+}
+#planificacion .plan-playtesting .image-plan-playtesting{
+	text-align: center;
+	margin: 5pt;
+}
+#planificacion .plan-playtesting .image-plan-playtesting img{
+	display: inline-block;
+	max-width: 500px;
+	max-height: 500px;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	border-radius: 15px;
+}
+#planificacion .plan-playtesting .protocolo li{
+	margin-top: 2pt;
+	margin-bottom: 2pt;
+}
+
 @media (max-width: 768px) {
 	h1 {
 		font-size: 4rem !important; /* Tamaño más pequeño para tablets */
