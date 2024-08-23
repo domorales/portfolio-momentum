@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 1rem 0;
+}
+
+
+
+nav {
+    margin-top: 1rem;
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+
+section {
+    margin: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    margin-top: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff6600;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 2rem;
+    color: #ff6600;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.screenshot-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.screenshot-gallery img {
+    width: 30%;
+    border-radius: 5px;
+}
+
+section {
+    margin: 2rem;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff6600;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.download-button:hover {
+    background-color: #e55a00;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    margin-top: 2rem;
+}
