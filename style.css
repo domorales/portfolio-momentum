@@ -322,6 +322,9 @@ p {
 	margin-top: 2pt;
 	margin-bottom: 2pt;
 }
+#desarrollo .card-body .text-idea{
+	font-size: 14pt !important;
+}
 
 @media (max-width: 768px) {
 	h1 {
