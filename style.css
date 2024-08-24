@@ -322,6 +322,48 @@ p {
 	margin-top: 2pt;
 	margin-bottom: 2pt;
 }
+#planificacion table.cronograma{
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+#planificacion .cronograma th, #planificacion .cronograma td{
+	width: 150px;
+	height: 75px;
+	border: none;
+	text-align: center;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 1px;
+	vertical-align: middle;
+}
+#planificacion .cronograma thead th{
+	height: 100px;
+	background-color: #387adf;
+	color: white;
+	font-size: 16pt;
+}
+#planificacion .cronograma tr td.no-style{
+	background-color: transparent !important;
+}
+#planificacion .cronograma tr.emi th, #planificacion .cronograma tr.emi td{
+	background-color: #d2e2fa80;
+}
+#planificacion .cronograma tr.dil th, #planificacion .cronograma tr.dil td{
+	background-color: #d3d3d380;
+}
+#planificacion .cronograma tr.jon th, #planificacion .cronograma tr.jon td{
+	background-color: #bcfffc80;
+}
+#planificacion .cronograma tr.cri th, #planificacion .cronograma tr.cri td{
+	background-color: #bdffbd80;
+}
+
+#planificacion .cronograma a{
+	color:#333 !important;
+	font-size: 16px !important;
+	font-weight: 400 !important;
+	text-decoration: none !important;
+}
 #desarrollo .card-body .text-idea{
 	font-size: 14pt !important;
 }
