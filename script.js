@@ -5,6 +5,30 @@ document.addEventListener('DOMContentLoaded', () => {
 	createAllIdeas();
 });
 
+document.addEventListener('scroll', function () {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    let currentSectionId = '';
+
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 0 && rect.bottom > 0) {
+            currentSectionId = section.getAttribute('id');
+        }
+    });
+
+    if (currentSectionId) {
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(currentSectionId)) {
+                link.classList.add('active');
+            }
+        });
+    }
+});
+
+
 // UTILS FUNCTIONS
 const createAllIdeas = () => {
 	const $fragment = document.createDocumentFragment(),
