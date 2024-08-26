@@ -35,7 +35,10 @@
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link" href="#init">Acerca</a>
+								<a class="nav-link" href="#homepage">Homepage</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#acerca">¿Quienes somos?</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#ideas">Ideas</a>
@@ -74,7 +77,10 @@
 						<ul
 							class="nav flex-column align-items-center justify-content-center mb-auto h-100">
 							<li class="nav-item">
-								<a href="#init" class="nav-link" aria-current="page">Acerca</a>
+								<a class="nav-link" href="#homepage">Homepage</a>
+							</li>
+							<li class="nav-item">
+								<a href="#acerca" class="nav-link" aria-current="page">¿Quienes somos?</a>
 							</li>
 							<li><a href="#ideas" class="nav-link">Ideas</a></li>
 							<li class="nav-item">
@@ -107,8 +113,89 @@
 					data-bs-target="#navbar"
 					class="col-12 col-lg-9 container m-5">
 					<div id="init"></div>
+					<section
+						id="homepage"
+						class="container-fluid mt-5 scrollspy-example"
+						data-bs-spy="scroll"
+						data-bs-offset="0"
+						data-bs-target="#navbar"
+						data-bs-smooth-scroll="true">
+						<div class="title">
+							<h1 class = "title">Laberinto Encantado</h1>
+						</div>
+						<h2>Descripción</h2>
+						<p>¡Prepárate para un épico enfrentamiento multijugador en un desafío de laberintos a toda velocidad! 
+							En este juego, serás asignado aleatoriamente a uno de los cuatro equipos, cada grupo representado por
+							un color único. ¿Tu misión? Navegar por el laberinto y ser el primero en escapar a través de la 
+							puerta que coincida con el color de tu equipo. ¡Pero cuidado! Si chocas con jugadores de equipos 
+							contrarios o te disparan, estarás fuera. La emoción aumenta cuando solo un jugador puede asegurar 
+							la victoria para todo su equipo. ¿Podrás superar a tus rivales y llevar a tu grupo al triunfo? 
+							¡Entra y demuestra tu habilidad!.</p>
+
+						<h2 class = "mt-5">Imagenes del juego</h2>
+						<div class="container-game-image horizontal">
+							<div class="item-game-image">
+								<figure>
+									<img src="images/homepage/images/1.jpg" alt="Conectados">
+								</figure>
+							</div>
+							<div class="item-game-image">
+								<figure>
+									<img src="images/homepage/images/2.jpg" alt="Partida">
+								</figure>
+							</div>
+							<div class="item-game-image">
+								<figure>
+									<img src="images/homepage/images/3.jpg" alt="Cámara Jugador">
+								</figure>
+							</div>
+							<div class="item-game-image">
+								<figure>
+									<img src="images/homepage/images/4.jpg" alt="Muerte">
+								</figure>
+							</div>
+							<div class="item-game-image">
+								<figure>
+									<img src="images/homepage/images/5.jpg" alt="Ganador">
+								</figure>
+							</div>
+						</div>
+
+						<h2>Trailer</h2>
+						<div>
+							<iframe width="1280" height="720" src="https://www.youtube.com/embed/cxau8bf5WpE" 
+							title="Laberinto Encantado - Trailer" frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+
+						<h2>Gameplay</h2>
+						<div>
+							<video controls>
+								<source src="assets/videos/gameplay.mp4" type="video/mp4">
+								Tu navegador no soporta la reproducción de video.
+							</video>
+						</div>
+						<h2>Iniciar Juego</h2>
+						<div>
+							<iframe src="https://emiliosg23.github.io/laberinto_encantado/"
+							class = "game"
+							width="726px" 
+							height="960px">
+						</iframe>
+						<p>Si encuentras problemas para iniciar el juego, por favor utiliza el siguiente botón:</p>
+						<a href="https://emiliosg23.github.io/laberinto_encantado/" class="btn btn-primary">Jugar</a>
+       					</div>
+						<h1 class="mt-5"><b>¿Quieres ver como se desarrolló?</b></h1>
+						<h1>¡Mira las siguientes secciones!</h1>
+						<div class="mb-5"></div>
+					</section>
 					<div class="d-flex vh-100 justify-content-center align-items-center">
-						<section id="acerca" class="container-fluid">
+						<section id="acerca" class="container-fluid mt-5 scrollspy-example"
+							data-bs-spy="scroll"
+							data-bs-offset="0"
+							data-bs-target="#navbar"
+							data-bs-smooth-scroll="true">
 							<div class="row">
 								<article class="col-md-7 col-sm-7">
 									<div class="title">
@@ -142,7 +229,6 @@
 							</div>
 						</section>
 					</div>
-
 					<section
 						id="ideas"
 						class="container-fluid mt-5 scrollspy-example"
@@ -1911,22 +1997,22 @@
 							roles se dividieron de la siguiente forma:
 						</p>
 						<div class="roles row">
-							<div class="col">
+							<div class="col emi">
 								<h4><b>Emilio Sáenz</b></h4>
 								<p>Desarrollador Juego</p>
 								<p>Diseño de Assets</p>
 							</div>
-							<div class="col">
+							<div class="col dil">
 								<h4><b>Dilan Morales</b></h4>
 								<p>Desarrollador servidor</p>
 								<p>Conexión cliente - servidor</p>
 							</div>
-							<div class="col">
+							<div class="col jon">
 								<h4><b>Jonathan Pibaque</b></h4>
 								<p>Diseño de Assets</p>
 								<p>Interfaz de Usuario</p>
 							</div>
-							<div class="col">
+							<div class="col cri">
 								<h4><b>Cristina Tigrero</b></h4>
 								<p>Ideación del Juego</p>
 								<p>Documentación y Playtesting</p>

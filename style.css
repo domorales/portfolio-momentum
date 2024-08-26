@@ -25,6 +25,50 @@ body {
 	display: none;
 }
 
+#homepage h1, #homepage div{
+	text-align: center;
+}
+#homepage .game{
+	border: solid #387adf;
+}
+
+.container-game-image {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.container-game-image.horizontal .item-game-image {
+	flex: 1 1 410px;
+	max-width: 410px;
+}
+.container-game-image.vertical .item-game-image {
+	flex: 1 1 220px;
+	max-width: 220px;
+}
+
+.item-game-image {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-top: 0.5rem;
+	box-sizing: border-box;
+}
+
+.item-game-image figcaption {
+	font-weight: 400;
+	font-size: 11pt;
+	text-align: justify;
+	margin: 0.5rem;
+}
+
+.item-game-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	border-radius: 15px;
+	border: solid 4px #387adf;
+}
+
 #navbar {
 	background: #387adf;
 	border-right: 0.25rem solid;
@@ -299,6 +343,25 @@ p {
 #planificacion .roles p {
 	font-size: 14pt !important;
 }
+
+#planificacion .roles div.col{
+	padding: 25px;
+	margin: 5px;
+	border-radius: 20px;
+}
+#planificacion .roles .emi{
+	background-color: #d2e2fa80;
+}
+#planificacion .roles .dil{
+	background-color: #d3d3d380;
+}
+#planificacion .roles .jon{
+	background-color: #bcfffc80;
+}
+#planificacion .roles .cri{
+	background-color: #bdffbd80;
+}
+
 #planificacion .plan-playtesting h3 {
 	text-align: center;
 }
